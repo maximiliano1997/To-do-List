@@ -9,37 +9,44 @@
     <script src="JS/index.js" type="text/javascript" defer></script>
     <title>To-do-List Project</title>
 </head>
-<body>
-
+<body onload="start()">
+    
     <img src="" alt="">
 
     <h1>JavaScript - To Do List</h1>
+    <p id="by">Project Created by Maximiliano Imanol Aguer</p>
 
     <form action="#" id="userInput">
-        <input type="text" placeholder="Escribe tu Tarea aqui..." autofocus>
+        <input type="text" placeholder="Write your Task here..." autofocus>
         <input type="submit" value="+" id="addBtn">
     </form>
 
     <div id="list" class="list-container">
-        <!-- <div class="task-container" id="1">
+        <div class="task-container" id="0">
             <label>
-                <input type="checkbox"> Tarea 1
+                <input type="checkbox" checked> Calculus Class at 9:00 a.m
             </label>
             <img src="images/trash.png" alt="">
         </div>
-
-        <div class="task-container" id="2">
+        <div class="task-container" id="0">
             <label>
-                <input type="checkbox"> Tarea 2
+                <input type="checkbox"> First Gym Training before 11:00 a.m
             </label>
             <img src="images/trash.png" alt="">
-        </div> -->
+        </div>
+        <div class="task-container" id="0">
+            <label>
+                <input type="checkbox"> Learn SQL today
+            </label>
+            <img src="images/trash.png" alt="..." id="deleteBtn">
+        </div>
     </div>
 
     
     <div id="stats">
-        Tareas pendientes : 5  Completadas: 3
+        <p id="pending">Pending Tasks: 2</p>  <p id="completed">Completed Tasks: 1</p>
     </div>
+    
     
 </body>
 </html>
